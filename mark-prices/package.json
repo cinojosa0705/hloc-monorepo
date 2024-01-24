@@ -1,0 +1,22 @@
+{
+  "name": "mark-price",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tsc && node src/index.js",
+    "start": "npx tsc && node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hxronetwork/dexterity-ts": "^1.6.10",
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/web3.js": "^1.78.5",
+    "axios": "^1.5.1",
+    "dotenv": "^16.3.1",
+    "pg-promise": "^11.5.4"
+  }
+}
