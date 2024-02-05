@@ -1,15 +1,6 @@
 import pgPromise from "pg-promise";
 import { Candle } from "./types";
 
-const pgp = pgPromise();
-const db = pgp({
-  host: "containers-us-west-155.your-host.com",
-  port: 7917,
-  database: "your-database",
-  user: "postgres",
-  password: "your-password",
-});
-
 export async function fetchPricesBy(
   mpg: string,
   product: string,
