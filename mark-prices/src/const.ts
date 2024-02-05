@@ -1,6 +1,7 @@
 import web3 = require("@solana/web3.js");
 import { Wallet } from "@project-serum/anchor";
 import { AggregationParams, TRG_MPG } from "./types";
+import pgPromise = require("pg-promise");
 
 const pgp = pgPromise();
 export const db = pgp({
