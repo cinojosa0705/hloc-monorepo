@@ -1,4 +1,4 @@
-import pgPromise from "pg-promise";
+import { pg } from "./const"
 import { Candle } from "./types";
 
 export async function fetchPricesBy(
