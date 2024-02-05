@@ -2,6 +2,15 @@ import web3 = require("@solana/web3.js");
 import { Wallet } from "@project-serum/anchor";
 import { AggregationParams, TRG_MPG } from "./types";
 
+const pgp = pgPromise();
+export const db = pgp({
+  host: "containers-us-west-155.your-host.com",
+  port: 7917,
+  database: "your-database",
+  user: "postgres",
+  password: "your-password",
+});
+
 export const rpc =
     "https://your_rpc_url";
 
