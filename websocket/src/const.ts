@@ -1,5 +1,7 @@
+import pgPromise from "pg-promise";
+
 const pgp = pgPromise();
-const db = pgp({
+export const db = pgp({
   host: "containers-us-west-155.your-host.com",
   port: 7917,
   database: "your-database",
