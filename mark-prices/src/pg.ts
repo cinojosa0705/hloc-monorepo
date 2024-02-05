@@ -2,15 +2,6 @@ import pgPromise = require("pg-promise");
 import { aggregationMapping, subtables } from "./const";
 import { AggregationParams, Candle, PriceRaw } from "./types";
 
-const pgp = pgPromise();
-const db = pgp({
-  host: "containers-us-west-155.your-host.com",
-  port: 7917,
-  database: "your-database",
-  user: "postgres",
-  password: "your-password",
-});
-
 export async function clearAllData(mpg: string, products: string[]) {
   for (const product of products) {
     const sanitizedProductName = `${mpg.toLocaleLowerCase()}_${product.replace("-", "_").toLowerCase()}`
