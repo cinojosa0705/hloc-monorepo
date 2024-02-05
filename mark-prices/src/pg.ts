@@ -1,5 +1,4 @@
-import pgPromise = require("pg-promise");
-import { aggregationMapping, subtables } from "./const";
+import { aggregationMapping, subtables, pg } from "./const";
 import { AggregationParams, Candle, PriceRaw } from "./types";
 
 export async function clearAllData(mpg: string, products: string[]) {
